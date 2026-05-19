@@ -9,3 +9,10 @@
 
   Run `npm run dev` to start the development server.
   
+  Run below to commit, pull, then push to GitHub
+`cd path/to/your/project
+git status
+git add -A
+git commit -m "Update portfolio website"
+git pull --rebase origin main
+git push origin main`
