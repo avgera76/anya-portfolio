@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import RemoteCareCaseStudy from './RemoteCareCaseStudy';
 import AIEnabledEHRCaseStudy from './AIEnabledEHRCaseStudy';
+import AIProcessImprovementCaseStudy from './AIProcessImprovementCaseStudy';
 import DigitalMROCaseStudy from './DigitalMROCaseStudy';
 import FlightDisruptionCaseStudy from './FlightDisruptionCaseStudy';
 import ServiceDesignDiscoveryCaseStudy from './ServiceDesignDiscoveryCaseStudy';
@@ -133,6 +134,7 @@ export default function Projects() {
             <BackButton onClick={() => setSelected(null)} />
             {selected.type === 'mckesson' && selected.id === 'remote-care' && <RemoteCareCaseStudy />}
             {selected.type === 'mckesson' && selected.id === 'ai-ehr' && <AIEnabledEHRCaseStudy />}
+            {selected.type === 'mckesson' && selected.id === 'ai-process' && <AIProcessImprovementCaseStudy />}
             {selected.type === 'aviation' && selected.id === 'digital-mro' && <DigitalMROCaseStudy />}
             {selected.type === 'aviation' && selected.id === 'flight-disruption' && <FlightDisruptionCaseStudy />}
             {selected.type === 'aviation' && selected.id === 'service-design-discovery' && <ServiceDesignDiscoveryCaseStudy />}

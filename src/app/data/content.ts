@@ -3,6 +3,7 @@ import flightDisruption from '../../imports/Screenshot_2026-05-02_at_4.01.04 PM.
 import enterpriseWorkscoping from '../../imports/Screenshot_2026-05-02_at_4.01.20 PM.png';
 import remoteCareThumb from '../../imports/Screenshot_2026-05-15_at_3.04.29_PM.png';
 import aiEhrThumb from '../../imports/ehr-ai-first-design_thumb.png';
+import aiProcessThumb from '../../imports/ehr-design-principles.png';
 
 export const services = [
   {
@@ -127,7 +128,7 @@ export const engagementModels = [
   },
 ];
 
-export type McKessonCaseId = 'remote-care' | 'ai-ehr';
+export type McKessonCaseId = 'remote-care' | 'ai-ehr' | 'ai-process';
 
 export type McKessonCase = {
   id: McKessonCaseId;
@@ -156,6 +157,15 @@ export const mckessonCases: McKessonCase[] = [
       'Reimagining the oncology EHR from a documentation system into an AI-enabled clinical workspace that supports providers in the moment of care—reducing administrative burden and surfacing insight when it matters.',
     thumb: aiEhrThumb,
     tag: 'Healthcare · AI · Clinical Workflows',
+  },
+  {
+    id: 'ai-process',
+    title: 'AI Process Improvement',
+    tagline: 'Reframing how UX, AI, and the Design System accelerate delivery',
+    shortDesc:
+      'Two initiatives that compress the gap between intent and execution: treating rapid prototyping as a core SDLC capability, and reimagining the McKesson Design System as an AI-enabled delivery platform rather than static documentation.',
+    thumb: aiProcessThumb,
+    tag: 'AI · Process · Design System',
   },
 ];
 
