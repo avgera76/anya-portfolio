@@ -4,6 +4,7 @@ import enterpriseWorkscoping from '../../imports/Screenshot_2026-05-02_at_4.01.2
 import remoteCareThumb from '../../imports/Screenshot_2026-05-15_at_3.04.29_PM.png';
 import aiEhrThumb from '../../imports/ehr-ai-first-design_thumb.png';
 import aiProcessThumb from '../../imports/ehr-design-principles.png';
+import oncologyJourneyThumb from '../../imports/oncology-journey-thumb.png';
 
 export const services = [
   {
@@ -128,7 +129,7 @@ export const engagementModels = [
   },
 ];
 
-export type McKessonCaseId = 'remote-care' | 'ai-ehr' | 'ai-process';
+export type McKessonCaseId = 'remote-care' | 'ai-ehr' | 'ai-process' | 'oncology-journey';
 
 export type McKessonCase = {
   id: McKessonCaseId;
@@ -166,6 +167,15 @@ export const mckessonCases: McKessonCase[] = [
       'Two initiatives that compress the gap between intent and execution: treating rapid prototyping as a core SDLC capability, and reimagining the McKesson Design System as an AI-enabled delivery platform rather than static documentation.',
     thumb: aiProcessThumb,
     tag: 'AI · Process · Design System',
+  },
+  {
+    id: 'oncology-journey',
+    title: 'Gradual Improvements Across the Patient Journey in Oncology',
+    tagline: 'Connecting fragmented clinical workflows into a safer, more coordinated experience',
+    shortDesc:
+      'Two Ontada initiatives that reframed technical asks as workflow and patient safety opportunities: integrating infusion pump hardware with the oncology EHR, and untangling the scheduling complexity that surrounds modern oncology care.',
+    thumb: oncologyJourneyThumb,
+    tag: 'Healthcare · Oncology · Workflow Design',
   },
 ];
 
